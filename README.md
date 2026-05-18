@@ -2,6 +2,7 @@
 Basicamente, o seu chatbot funciona como um ciclo simples:
 O usuário digita o nome de uma comida, o sistema pega esse texto e faz uma busca (em uma API ou banco de dados). Se não encontrar nada, ele mostra uma mensagem de erro. Se encontrar, ele organiza as informações da receita — como ingredientes e modo de preparo — e exibe tudo de forma estruturada na tela.
 Depois disso, o chatbot volta a pedir outra entrada, ficando nesse loop até o usuário digitar “sair”.
+
 🧠 1. Início do programa
 
 O chatbot mostra a mensagem inicial:
