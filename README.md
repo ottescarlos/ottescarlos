@@ -3,12 +3,13 @@ Sou estudante de Amalise de Desenvolvimento de Sistema e tenho interesse em tecn
 
 
 🚀 Áreas de Interesse
-Inteligência Artificial
-Engenharia de Prompt
-Desenvolvimento Web
-Análise de Dados
-Automação de Processos
-Tecnologia e Inovação
+
+Inteligência Artificial;
+Engenharia de Prompt; 
+Desenvolvimento Web; 
+Análise de Dados; 
+Automação de Processos; 
+Tecnologia e Inovação; 
 
 🛠️ Tecnologias e Ferramentas
 Python
