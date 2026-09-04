@@ -1,1 +1,60 @@
+#include <stdio.h>
 
+int main() {
+
+    int opcao;
+    float temp, resultado;
+
+    printf("===== CONVERSOR DE TEMPERATURA =====\n");
+    printf("1. Celsius -> Fahrenheit\n");
+    printf("2. Fahrenheit -> Celsius\n");
+    printf("3. Celsius -> Kelvin\n");
+    printf("4. Kelvin -> Celsius\n");
+    printf("5. Fahrenheit -> Kelvin\n");
+    printf("6. Kelvin -> Fahrenheit\n");
+    printf("7. Encerrar\n");
+    printf("====================================\n");
+
+    printf("Digite a opcao: ");
+    if (scanf("%d", &opcao) != 1) {
+        printf("Erro: opcao invalida!\n");
+        return 0;
+    }
+
+    if (opcao == 7) {
+        printf("Programa encerrado!\n");
+        return 0;
+    }
+
+    printf("Digite a temperatura: ");
+    if (scanf("%f", &temp) != 1) {
+        printf("Erro: temperatura invalida!\n");
+        return 0;
+    }
+
+    if ((opcao == 4 || opcao == 6) && temp < 0) {
+        printf("Erro: Kelvin nao pode ser negativo!\n");
+        return 0;
+    }
+
+    if (opcao == 1)
+        resultado = temp * 9 / 5 + 32;
+    else if (opcao == 2)
+        resultado = (temp - 32) * 5 / 9;
+    else if (opcao == 3)
+        resultado = temp + 273.15;
+    else if (opcao == 4)
+        resultado = temp - 273.15;
+    else if (opcao == 5)
+        resultado = (temp - 32) * 5 / 9 + 273.15;
+    else if (opcao == 6)
+        resultado = (temp - 273.15) * 9 / 5 + 32;
+    else {
+        printf("Erro: opcao invalida!\n");
+        return 0;
+    }
+
+    printf("Resultado: %.2f\n", resultado);
+
+    return 0;
+}
