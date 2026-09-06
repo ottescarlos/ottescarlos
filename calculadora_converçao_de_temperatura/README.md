@@ -20,4 +20,4 @@ Informe a temperatura e escolha as unidades.
 Veja o resultado da conversão.
 👨‍💻 Autor
 
-Desenvolvido por Seu Nome.
+Desenvolvido por Carlos Henrique Fernandes Ottes.
