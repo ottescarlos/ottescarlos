@@ -2,8 +2,8 @@
 
 ## 1. Identificação
 
-**Nome do aluno:** [SEU NOME]
-**Disciplina:** [NOME DA DISCIPLINA]
+**Nome do aluno:** [Carlos Henrique Fernandes Ottes]
+**Disciplina:** [Algoritmos e Pensamento Computacional]
 **Professora:** Profa. Karla Sartin
 **Título do projeto:** Sistema de Monitoramento de Temperaturas
 
@@ -179,31 +179,7 @@ As três temperaturas ficaram acima do limite de 30 °C.
 **Resultado:** ao registrar a terceira temperatura consecutiva acima do limite, o programa apresentou um alerta crítico e encerrou automaticamente o monitoramento.
 
 ---
-
-## 7. Organização do projeto
-
-O projeto está organizado da seguinte forma:
-
-```text
-desafio-monitoramento/
-│
-├── monitoramento.c
-│
-├── README.md
-│
-└── evidencias/
-    ├── teste01.png
-    ├── teste02.png
-    └── teste03.png
-```
-
-O arquivo `monitoramento.c` contém o código-fonte do programa.
-
-O arquivo `README.md` contém a documentação técnica do projeto.
-
-A pasta `evidencias` contém as capturas de tela dos testes realizados.
-
----
+ 
 
 ## 8. Reflexão final
 
