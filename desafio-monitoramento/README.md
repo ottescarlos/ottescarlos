@@ -1,8 +1,8 @@
 🌡️ Sistema de Monitoramento de Temperaturas
 1. Identificação
 
-Nome do aluno: [SEU NOME]
-Disciplina: [NOME DA DISCIPLINA]
+Nome do aluno: [Carlos Henrique Fernandes Ottes]
+Disciplina: []
 Professora: Profa. Karla Sartin
 Título do projeto: Sistema de Monitoramento de Temperaturas
 
