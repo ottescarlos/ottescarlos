@@ -1,67 +1,57 @@
-🌡️ Sistema de Monitoramento de Temperaturas
-1. Identificação
+# 🌡️ Sistema de Monitoramento de Temperaturas
 
-Nome do aluno: [Carlos Henrique Fernandes Ottes]
-Disciplina: []
-Professora: Profa. Karla Sartin
-Título do projeto: Sistema de Monitoramento de Temperaturas
+## Identificação
 
-2. Objetivo
+**Aluno:** [Carlos Henrique Fernandes Ottes]
+**Disciplina:** [Algoritmos e Pensamento Computacional ]
+**Professora:** Profa. Karla Sartin
 
-O objetivo deste projeto é desenvolver um sistema em linguagem C capaz de realizar o monitoramento de temperaturas informadas pelo usuário.
+## Objetivo
 
-O programa permite definir um limite de temperatura, registrar diversas leituras, identificar temperaturas acima do limite e verificar quando ocorrem três temperaturas consecutivas acima desse limite.
+Desenvolver um programa em C para monitorar temperaturas, verificar valores acima de um limite e encerrar automaticamente após três temperaturas consecutivas acima desse limite.
 
-Ao final do monitoramento, o programa apresenta um relatório contendo a quantidade de temperaturas registradas, a média, a maior temperatura, a menor temperatura, a quantidade de temperaturas acima do limite e o percentual de leituras acima do limite.
+## Funcionamento
 
-3. Funcionamento do programa
-Definição do limite
+O usuário define um limite de temperatura e depois informa as temperaturas.
 
-Inicialmente, o programa solicita ao usuário um limite de temperatura.
+O programa:
 
-O limite deve estar entre -100 °C e 100 °C. Caso o usuário informe um valor inválido ou um dado que não seja numérico, o programa solicita uma nova entrada.
+* valida entradas inválidas;
+* identifica temperaturas acima do limite;
+* conta temperaturas consecutivas acima do limite;
+* calcula média, maior, menor, quantidade e percentual;
+* encerra após três temperaturas consecutivas acima do limite ou quando o usuário digita `-999`.
 
-Realização das leituras
+## Estruturas utilizadas
 
-Depois que o limite é definido, o programa começa a receber as temperaturas.
+Foi utilizado **do...while** para garantir que o limite seja informado corretamente.
 
-As temperaturas também devem estar entre -100 °C e 100 °C.
+O **while** foi utilizado para realizar as leituras das temperaturas até que uma condição de encerramento aconteça.
 
-Para encerrar manualmente o monitoramento, o usuário pode digitar o valor -999.
+## Como executar
 
-Tratamento de valores inválidos
+```bash
+gcc monitoramento.c -o monitoramento
+./monitoramento
+```
 
-O programa verifica se o usuário digitou um número.
+No Windows:
 
-Quando uma entrada não numérica é informada, ela é identificada como inválida e o programa limpa a entrada antes de solicitar uma nova temperatura.
+```bash
+gcc monitoramento.c -o monitoramento.exe
+monitoramento.exe
+```
 
-Temperaturas fora do intervalo permitido também são rejeitadas e não participam dos cálculos.
+## Testes
 
-Temperaturas acima do limite
+**Teste 1:** entradas inválidas foram rejeitadas corretamente.
 
-Cada temperatura válida é comparada com o limite definido no início do programa.
+**Teste 2:** temperaturas acima do limite, mas não consecutivas, não encerraram o programa.
 
-Quando a temperatura é maior que o limite, o programa apresenta uma mensagem de alerta e aumenta a quantidade de temperaturas acima do limite.
+**Teste 3:** três temperaturas consecutivas acima do limite encerraram o monitoramento automaticamente.
 
-Contagem de temperaturas consecutivas
+As evidências dos testes estão na pasta `evidencias/`.
 
-O programa possui um contador chamado consecutivas.
+## Reflexão
 
-Quando uma temperatura ultrapassa o limite, esse contador é incrementado.
-
-Quando uma temperatura está dentro do limite, o contador é zerado.
-
-Dessa maneira, o programa consegue identificar quando três temperaturas consecutivas ultrapassam o limite.
-
-Quando isso acontece, o monitoramento é encerrado automaticamente.
-
-Relatório final
-
-Ao finalizar o monitoramento, o programa apresenta:
-
-quantidade de temperaturas registradas;
-maior temperatura;
-menor temperatura;
-média das temperaturas;
-quantidade de temperaturas acima do limite;
-percentual de temperaturas acima do limite.
+Escolhi `do...while` para validar o limite porque ele precisa ser solicitado pelo menos uma vez. Usei `while` para o monitoramento porque a quantidade de temperaturas não é conhecida e o programa deve continuar até uma condição de encerramento.
